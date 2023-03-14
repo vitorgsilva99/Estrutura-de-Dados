@@ -1,0 +1,32 @@
+package buscabinaria;
+
+public class BuscaBinaria {
+    
+    static int[] v={3,4,6,9,11};
+        
+    public static void main(String[] args) {
+       int indice = binaria(11);
+       if(indice==-1){
+           System.out.println("Náo achou");
+       } else {
+           System.out.println("O indice é: " + indice);
+       }
+        
+    }
+    
+    public static int binaria(int b){
+        int inicio = 0, fim = v.length - 1, meio;
+        
+        while(inicio<=fim){
+            meio = (fim + inicio) / 2;
+            if (b==v[meio]){
+              return meio;
+            } else if (b > v[meio]){
+                inicio = meio + 1;
+            } else {
+                fim = meio - 1;
+            }
+        }
+        return -1;
+    }
+}
