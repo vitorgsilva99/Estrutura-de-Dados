@@ -3,7 +3,7 @@ Códigos das aulas de Estrutura de Dados
 
 Aula 13-03:
 
-Métodos de ordenacao:
+MÉTODOS DE ORDENACAO
 
 BUBBLE SORT:
 
